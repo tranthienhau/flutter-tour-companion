@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stay and transfers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#849ba1",
+                        "inverse-on-surface": "#e0f4fb",
+                        "on-tertiary-fixed-variant": "#344a4f",
+                        "primary-fixed": "#b1ecff",
+                        "danger": "#DC2626",
+                        "tertiary-fixed-dim": "#b3cbd0",
+                        "surface": "#FFFFFF",
+                        "inverse-primary": "#5dd5f6",
+                        "textTertiary": "#7C9299",
+                        "on-secondary-container": "#753500",
+                        "on-tertiary-fixed": "#071f23",
+                        "surface-container-low": "#e3f7fe",
+                        "success": "#16A34A",
+                        "surface-container": "#ddf1f8",
+                        "on-secondary-fixed": "#321300",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#0b1e23",
+                        "background": "#F1F8FA",
+                        "on-background": "#0b1e23",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#ffb68a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#001f27",
+                        "border": "#D4E4E8",
+                        "surfaceAlt": "#E9F3F6",
+                        "on-tertiary-container": "#1d3337",
+                        "accentPressed": "#0C8BA6",
+                        "primary": "#00677c",
+                        "tertiary-fixed": "#cfe7ed",
+                        "on-tertiary": "#ffffff",
+                        "textSecondary": "#41595F",
+                        "secondary-fixed": "#ffdbc8",
+                        "surface-dim": "#c9dde4",
+                        "on-primary-container": "#003540",
+                        "warning": "#D97706",
+                        "primary-container": "#0ea5c4",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#ff9e5f",
+                        "surface-bright": "#f0fbff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bcc8cd",
+                        "on-surface-variant": "#3d494d",
+                        "on-secondary-fixed-variant": "#743500",
+                        "surface-variant": "#d2e6ed",
+                        "outline": "#6d797d",
+                        "inverse-surface": "#213338",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#d2e6ed",
+                        "surface-container-high": "#d7ecf2",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "secondary": "#954a0f",
+                        "tertiary": "#4c6267",
+                        "primary-fixed-dim": "#5dd5f6",
+                        "surface-tint": "#00677c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "edge-padding": "20px",
+                        "8pt-md": "16px",
+                        "home-inset": "34px",
+                        "status-inset": "59px",
+                        "8pt-xl": "32px",
+                        "8pt-sm": "8px",
+                        "8pt-xs": "4px",
+                        "8pt-lg": "24px"
+                    },
+                    "fontFamily": {
+                        "label": ["Sora"],
+                        "title": ["Sora"],
+                        "body": ["Sora"],
+                        "display": ["Sora"],
+                        "caption": ["Sora"]
+                    },
+                    "fontSize": {
+                        "label": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "title": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "caption": ["13px", { "lineHeight": "18px", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Sora', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .soft-shadow {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-[118px]">
+<!-- Top App Bar -->
+<header class="bg-surface shadow-sm w-full top-0 sticky z-40">
+<div class="flex items-center justify-between px-edge-padding h-14 w-full pt-status-inset box-content">
+<button class="text-primary hover:opacity-80 active:scale-95 transition-transform p-2 -ml-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-title text-title flex-1 text-center">Stay and transfers</h1>
+<div class="bg-surfaceAlt px-3 py-1 rounded-full text-textSecondary font-caption">Group</div>
+</div>
+</header>
+<main class="px-edge-padding py-8pt-md flex flex-col gap-8pt-lg">
+<!-- Segmented Control -->
+<div class="bg-surfaceAlt p-1 rounded-full flex gap-1 shadow-inner relative">
+<button class="flex-1 bg-surface py-2 rounded-full font-label text-primary-container soft-shadow z-10 transition-all">Hotels</button>
+<button class="flex-1 py-2 rounded-full font-label text-textSecondary hover:bg-surface/50 transition-all">Transfers</button>
+<button class="flex-1 py-2 rounded-full font-label text-textSecondary hover:bg-surface/50 transition-all">Meeting points</button>
+</div>
+<!-- Hotels List -->
+<section class="flex flex-col gap-8pt-md">
+<!-- Hotel Card 1 -->
+<article class="bg-surface rounded-[20px] soft-shadow overflow-hidden flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Crown Melbourne exterior modern luxury hotel daytime sunny" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZHHvcuVMp93vkYjD_ygpW5TU1Nt5Tf_4zTOVRJXvSyzJZ0DwYhXRYFhDXw3NwWuFn1px4NHPMvWeL_GnWpwLNyb05jTaUMI0XqZLeSgVYz9jt2fu4wNDxh8sDT1R_m82Aujf6KwkhageoiqGXUf4aDylmTAibN7Oyt5Uvj-VA-_x8JDJ5wxgIxKvw342ZS0LGPcCIMbDun-q8t-aZUTW-SccPZhTugWVuNni5BrbS0uhiPnIo5jOEUZGT_1YXNyvBucELCKYD7zU"/>
+</div>
+<div class="p-8pt-md flex flex-col gap-8pt-sm">
+<h2 class="font-title text-title">Crown Melbourne</h2>
+<div class="flex items-center gap-2 text-textSecondary font-body text-sm">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<span>Dec 26 - Dec 30</span>
+</div>
+<div class="flex items-center gap-2 text-textSecondary font-body text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>8 Whiteman St, Southbank VIC 3006</span>
+</div>
+<div class="flex gap-3 mt-2">
+<button class="w-10 h-10 rounded-full border border-primary-container text-primary-container flex items-center justify-center hover:bg-primary-container/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl">phone</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-primary-container text-primary-container flex items-center justify-center hover:bg-primary-container/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl">directions</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Hotel Card 2 -->
+<article class="bg-surface rounded-[20px] soft-shadow overflow-hidden flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Sofitel Sydney Darling Harbour exterior sunset modern glass building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoE62lrbqkJh9TdBUJ-3d4dUH5fCGRqg2u3-Z0M8kROI0g4759-sDoKBh1LiHZ9s2A2jsl6G8UK_HCeULe_6R3NbsdzeEi9uW5CFBpYGJxE-gTu-9pdFxX7BM6HuOXedmL8x4DJArgRZ7kSqxAuKIs9_YJCDZGJxpO2wGCvcr5srCjSAJBO5TOWvFQFEwUkSWa9wNjfEKEq5IL4kFKAF62XP3VUjZr6Bj6NKSW9ompg08wDiyQmRFiRI2MEHY2P8f1wl2KhKjOid8"/>
+</div>
+<div class="p-8pt-md flex flex-col gap-8pt-sm">
+<h2 class="font-title text-title">Sofitel Sydney Darling Harbour</h2>
+<div class="flex items-center gap-2 text-textSecondary font-body text-sm">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<span>Dec 30 - Jan 4</span>
+</div>
+<div class="flex items-center gap-2 text-textSecondary font-body text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>12 Darling Dr, Sydney NSW 2000</span>
+</div>
+<div class="flex gap-3 mt-2">
+<button class="w-10 h-10 rounded-full border border-primary-container text-primary-container flex items-center justify-center hover:bg-primary-container/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl">phone</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-primary-container text-primary-container flex items-center justify-center hover:bg-primary-container/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl">directions</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Transfers Section -->
+<section class="flex flex-col gap-8pt-sm">
+<h3 class="font-title text-title mb-2">Upcoming Transfer</h3>
+<div class="bg-surface rounded-[20px] soft-shadow p-8pt-md flex items-center gap-4">
+<div class="bg-surfaceAlt p-3 rounded-full text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined">directions_bus</span>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="font-title text-base font-semibold">Coach to MCG</span>
+<span class="font-body text-sm text-textSecondary">1:30 PM • Hotel Lobby, Coach bay 3</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar -->
+<nav class="bg-surface border-t border-border fixed bottom-0 w-full z-50 flex justify-around items-center h-[84px] pb-home-inset px-8pt-md md:hidden">
+<button class="flex flex-col items-center justify-center text-textTertiary font-label hover:bg-surface-variant/50 active:scale-90 transition-all p-2 rounded-lg w-16">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="text-[10px]">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-primary-container font-label hover:bg-surface-variant/50 active:scale-90 transition-all p-2 rounded-lg w-16">
+<span class="material-symbols-outlined mb-1" data-icon="event_note" style="font-variation-settings: 'FILL' 1;">event_note</span>
+<span class="text-[10px] font-semibold">Itinerary</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary font-label hover:bg-surface-variant/50 active:scale-90 transition-all p-2 rounded-lg w-16">
+<span class="material-symbols-outlined mb-1" data-icon="map">map</span>
+<span class="text-[10px]">Map</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary font-label hover:bg-surface-variant/50 active:scale-90 transition-all p-2 rounded-lg w-16">
+<span class="material-symbols-outlined mb-1" data-icon="notifications">notifications</span>
+<span class="text-[10px]">Updates</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary font-label hover:bg-surface-variant/50 active:scale-90 transition-all p-2 rounded-lg w-16">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="text-[10px]">Profile</span>
+</button>
+</nav>
+</body></html>

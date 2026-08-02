@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ashes Tour AU - Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#d7ecf2",
+                    "surfaceAlt": "#E9F3F6",
+                    "surface-dim": "#c9dde4",
+                    "on-background": "#0b1e23",
+                    "tertiary": "#4c6267",
+                    "tertiary-fixed": "#cfe7ed",
+                    "on-surface-variant": "#3d494d",
+                    "on-surface": "#0b1e23",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#071f23",
+                    "danger": "#DC2626",
+                    "on-tertiary-fixed-variant": "#344a4f",
+                    "surface-variant": "#d2e6ed",
+                    "textSecondary": "#41595F",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#321300",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdbc8",
+                    "primary": "#00677c",
+                    "secondary-container": "#ff9e5f",
+                    "surface-tint": "#00677c",
+                    "surface-container-highest": "#d2e6ed",
+                    "surface-container-low": "#e3f7fe",
+                    "surface-bright": "#f0fbff",
+                    "secondary-fixed-dim": "#ffb68a",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#ddf1f8",
+                    "success": "#16A34A",
+                    "inverse-on-surface": "#e0f4fb",
+                    "surface": "#FFFFFF",
+                    "accentPressed": "#0C8BA6",
+                    "on-error-container": "#93000a",
+                    "background": "#F1F8FA",
+                    "on-secondary-container": "#753500",
+                    "outline-variant": "#bcc8cd",
+                    "outline": "#6d797d",
+                    "warning": "#D97706",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#954a0f",
+                    "on-primary-container": "#003540",
+                    "inverse-primary": "#5dd5f6",
+                    "tertiary-container": "#849ba1",
+                    "primary-fixed": "#b1ecff",
+                    "error": "#ba1a1a",
+                    "textTertiary": "#7C9299",
+                    "primary-fixed-dim": "#5dd5f6",
+                    "border": "#D4E4E8",
+                    "on-primary-fixed-variant": "#004e5e",
+                    "on-tertiary-container": "#1d3337",
+                    "tertiary-fixed-dim": "#b3cbd0",
+                    "primary-container": "#0ea5c4",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#743500",
+                    "on-primary-fixed": "#001f27",
+                    "inverse-surface": "#213338"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "8pt-xl": "32px",
+                    "8pt-md": "16px",
+                    "home-inset": "34px",
+                    "8pt-lg": "24px",
+                    "edge-padding": "20px",
+                    "8pt-xs": "4px",
+                    "8pt-sm": "8px",
+                    "status-inset": "59px"
+            },
+            "fontFamily": {
+                    "label": [
+                            "Sora"
+                    ],
+                    "caption": [
+                            "Sora"
+                    ],
+                    "body": [
+                            "Sora"
+                    ],
+                    "title": [
+                            "Sora"
+                    ],
+                    "display": [
+                            "Sora"
+                    ]
+            },
+            "fontSize": {
+                    "label": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "caption": [
+                            "13px",
+                            {
+                                    "lineHeight": "18px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "title": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: #F1F8FA;
+            color: #0b1e23;
+        }
+        .soft-shadow {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0EA5C4 0%, #FF9E5E 100%);
+        }
+        /* Custom timeline styles */
+        .timeline-line {
+            width: 2px;
+            background-color: #D4E4E8;
+            position: absolute;
+            top: 24px;
+            bottom: -24px;
+            left: 11px;
+            z-index: 0;
+        }
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #0EA5C4;
+            border: 2px solid white;
+            position: relative;
+            z-index: 1;
+            margin-left: 6px;
+            margin-top: 6px;
+        }
+        .timeline-dot.past {
+            background-color: #bcc8cd;
+        }
+        .timeline-item:last-child .timeline-line {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen pb-[120px]">
+<!-- Top App Bar -->
+<header class="bg-surface w-full pt-status-inset flex justify-between items-center px-edge-padding h-[115px] sticky top-0 z-40 transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">sports_cricket</span>
+<h1 class="font-title text-title text-primary-container font-bold tracking-tight">Ashes Tour AU</h1>
+<span class="bg-surfaceAlt text-primary-container font-caption text-caption px-2 py-1 rounded-full ml-1 border border-border">Group C</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="bg-[#D6EEF4] text-primary-container font-caption text-[11px] font-medium px-2 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+                Offline ready
+            </div>
+</div>
+</header>
+<main class="px-edge-padding pt-8pt-md flex flex-col gap-8pt-xl">
+<!-- Hero Card -->
+<section>
+<div class="hero-gradient rounded-[20px] p-6 text-white soft-shadow relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-white opacity-10 rounded-full blur-2xl"></div>
+<div class="absolute bottom-0 left-0 -ml-12 -mb-12 w-32 h-32 bg-primary-container opacity-20 rounded-full blur-xl"></div>
+<div class="relative z-10 flex flex-col h-full justify-between gap-6">
+<div class="flex justify-between items-start">
+<span class="font-label text-label uppercase tracking-widest text-white/90">What's Next</span>
+<div class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full font-label text-label font-bold border border-white/30">
+                            in 45 min
+                        </div>
+</div>
+<div>
+<h2 class="font-display text-display mb-2 leading-tight text-white drop-shadow-sm">Coach transfer to MCG</h2>
+<div class="flex items-center gap-4 text-white/90">
+<div class="flex items-center gap-1 font-body text-body">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+                                2:30 PM
+                            </div>
+<div class="flex items-center gap-1 font-body text-body">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+                                Hotel Lobby
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Actions -->
+<section class="grid grid-cols-3 gap-4">
+<button class="bg-surface rounded-[16px] p-4 flex flex-col items-center justify-center gap-2 soft-shadow hover:bg-surfaceAlt transition-colors active:scale-95">
+<div class="bg-surfaceAlt w-12 h-12 rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">map</span>
+</div>
+<span class="font-label text-label text-on-surface">Map</span>
+</button>
+<button class="bg-surface rounded-[16px] p-4 flex flex-col items-center justify-center gap-2 soft-shadow hover:bg-surfaceAlt transition-colors active:scale-95">
+<div class="bg-surfaceAlt w-12 h-12 rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hotel</span>
+</div>
+<span class="font-label text-label text-on-surface">Hotel</span>
+</button>
+<button class="bg-surface rounded-[16px] p-4 flex flex-col items-center justify-center gap-2 soft-shadow hover:bg-surfaceAlt transition-colors active:scale-95 relative">
+<div class="absolute top-3 right-3 w-3 h-3 bg-secondary-container rounded-full border-2 border-surface"></div>
+<div class="bg-surfaceAlt w-12 h-12 rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<span class="font-label text-label text-on-surface">Updates</span>
+</button>
+</section>
+<!-- Timeline Section -->
+<section class="bg-surface rounded-[20px] p-6 soft-shadow">
+<h3 class="font-title text-title text-on-surface mb-6">Today</h3>
+<div class="flex flex-col">
+<!-- Item 1: Past -->
+<div class="timeline-item relative flex gap-4 pb-6 opacity-60">
+<div class="timeline-line"></div>
+<div class="w-6 flex justify-center">
+<div class="timeline-dot past"></div>
+</div>
+<div class="flex-1">
+<div class="font-label text-label text-textSecondary mb-1">08:00 AM</div>
+<div class="font-body text-body text-on-surface font-medium">Breakfast at Crown</div>
+</div>
+</div>
+<!-- Item 2: Past -->
+<div class="timeline-item relative flex gap-4 pb-6 opacity-60">
+<div class="timeline-line"></div>
+<div class="w-6 flex justify-center">
+<div class="timeline-dot past"></div>
+</div>
+<div class="flex-1">
+<div class="font-label text-label text-textSecondary mb-1">10:00 AM</div>
+<div class="font-body text-body text-on-surface font-medium">City walking tour</div>
+</div>
+</div>
+<!-- Item 3: Current/Next -->
+<div class="timeline-item relative flex gap-4 pb-6">
+<div class="timeline-line"></div>
+<div class="w-6 flex justify-center">
+<div class="timeline-dot bg-secondary-container border-secondary-container shadow-[0_0_0_4px_rgba(255,158,94,0.2)]"></div>
+</div>
+<div class="flex-1 bg-surfaceAlt rounded-[12px] p-4 border border-border">
+<div class="font-label text-label text-primary-container mb-1">02:30 PM</div>
+<div class="font-body text-body text-on-surface font-semibold mb-2">Coach to MCG</div>
+<div class="flex items-center gap-1 font-caption text-caption text-textSecondary">
+<span class="material-symbols-outlined text-[16px]">directions_bus</span>
+                            Meet in Lobby
+                        </div>
+</div>
+</div>
+<!-- Item 4: Future -->
+<div class="timeline-item relative flex gap-4 pb-6">
+<div class="timeline-line"></div>
+<div class="w-6 flex justify-center">
+<div class="timeline-dot bg-surface border-border"></div>
+</div>
+<div class="flex-1">
+<div class="font-label text-label text-textSecondary mb-1">03:30 PM</div>
+<div class="font-body text-body text-on-surface font-medium">Ashes Test Day 1</div>
+</div>
+</div>
+<!-- Item 5: Future -->
+<div class="timeline-item relative flex gap-4">
+<div class="timeline-line"></div>
+<div class="w-6 flex justify-center">
+<div class="timeline-dot bg-surface border-border"></div>
+</div>
+<div class="flex-1">
+<div class="font-label text-label text-textSecondary mb-1">08:00 PM</div>
+<div class="font-body text-body text-on-surface font-medium">Group dinner</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-surface h-[84px] px-2 pb-[34px] border-t border-border shadow-[0_-4px_16px_rgba(0,0,0,0.02)]">
+<button class="flex flex-col items-center justify-center text-primary-container hover:opacity-80 transition-opacity active:scale-90 duration-200 w-16 h-full pt-2">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label text-label text-[10px]">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary hover:opacity-80 transition-opacity active:scale-90 duration-200 w-16 h-full pt-2">
+<span class="material-symbols-outlined mb-1">calendar_today</span>
+<span class="font-label text-label text-[10px]">Itinerary</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary hover:opacity-80 transition-opacity active:scale-90 duration-200 w-16 h-full pt-2">
+<span class="material-symbols-outlined mb-1">map</span>
+<span class="font-label text-label text-[10px]">Map</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary hover:opacity-80 transition-opacity active:scale-90 duration-200 w-16 h-full pt-2 relative">
+<div class="absolute top-2 right-4 w-2 h-2 bg-secondary-container rounded-full"></div>
+<span class="material-symbols-outlined mb-1">notifications</span>
+<span class="font-label text-label text-[10px]">Updates</span>
+</button>
+<button class="flex flex-col items-center justify-center text-textTertiary hover:opacity-80 transition-opacity active:scale-90 duration-200 w-16 h-full pt-2">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label text-label text-[10px]">Profile</span>
+</button>
+</nav>
+</body></html>

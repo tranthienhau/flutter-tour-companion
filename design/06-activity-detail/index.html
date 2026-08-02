@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ashes Test - Day 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#b3cbd0",
+                        "on-surface-variant": "#3d494d",
+                        "surface-bright": "#f0fbff",
+                        "on-tertiary-fixed": "#071f23",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#5dd5f6",
+                        "on-tertiary-container": "#1d3337",
+                        "on-error-container": "#93000a",
+                        "warning": "#D97706",
+                        "on-primary": "#ffffff",
+                        "textSecondary": "#41595F",
+                        "success": "#16A34A",
+                        "tertiary-fixed": "#cfe7ed",
+                        "surface-container-low": "#e3f7fe",
+                        "surface-tint": "#00677c",
+                        "surface-variant": "#d2e6ed",
+                        "on-surface": "#0b1e23",
+                        "on-tertiary-fixed-variant": "#344a4f",
+                        "error": "#ba1a1a",
+                        "outline": "#6d797d",
+                        "tertiary-container": "#849ba1",
+                        "tertiary": "#4c6267",
+                        "surface-container": "#ddf1f8",
+                        "surfaceAlt": "#E9F3F6",
+                        "on-secondary-container": "#753500",
+                        "secondary-fixed-dim": "#ffb68a",
+                        "danger": "#DC2626",
+                        "primary": "#00677c",
+                        "on-background": "#0b1e23",
+                        "primary-fixed-dim": "#5dd5f6",
+                        "inverse-surface": "#213338",
+                        "outline-variant": "#bcc8cd",
+                        "background": "#F1F8FA",
+                        "textTertiary": "#7C9299",
+                        "surface-container-high": "#d7ecf2",
+                        "primary-container": "#0ea5c4",
+                        "secondary-container": "#ff9e5f",
+                        "surface-container-highest": "#d2e6ed",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#c9dde4",
+                        "surface": "#FFFFFF",
+                        "on-primary-container": "#003540",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "on-primary-fixed": "#001f27",
+                        "border": "#D4E4E8",
+                        "on-secondary-fixed": "#321300",
+                        "inverse-on-surface": "#e0f4fb",
+                        "secondary": "#954a0f",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#b1ecff",
+                        "on-secondary-fixed-variant": "#743500",
+                        "accentPressed": "#0C8BA6",
+                        "secondary-fixed": "#ffdbc8",
+                        "accentTint": "#D4E4E8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.25rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "edge-padding": "20px",
+                        "8pt-xs": "4px",
+                        "8pt-xl": "32px",
+                        "status-inset": "59px",
+                        "8pt-sm": "8px",
+                        "home-inset": "34px",
+                        "8pt-md": "16px",
+                        "8pt-lg": "24px"
+                    },
+                    "fontFamily": {
+                        "title": ["Sora"],
+                        "caption": ["Sora"],
+                        "body": ["Sora"],
+                        "label": ["Sora"],
+                        "display": ["Sora"]
+                    },
+                    "fontSize": {
+                        "title": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "caption": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+                        "body": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "display": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    },
+                    "boxShadow": {
+                        "card": "0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06)"
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col items-center">
+<!-- Mobile Container (Max 393px width for iPhone simulation) -->
+<main class="w-full max-w-[393px] bg-background min-h-screen relative shadow-2xl flex flex-col pb-home-inset">
+<!-- Hero Section -->
+<section class="relative w-full h-[300px] rounded-b-2xl overflow-hidden shadow-card shrink-0">
+<img alt="Ashes Test Day 1" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLYJeKjuZvL8p5370mFJSHaA9048f3Fp2yR5g3khZEjbHqJ5SNSwpf92DBwQpI9J9EEx-K5JstVSdyUs_zFq4exTVfYv5Q5b7lwxL2Y4hgUlsDba71yPREMuzL3_DarKKxhyGX3ZayVLP41n8wqgkGsVkwHYDe3Umq55ESYzUrulvsSyCy_D2bF0uXNUAdZnnc0JRswfzIR68jdq-OZsNk4cZYH3x70H53EnozwVsu7NUAWSRWAFrMMXiEIjiynEcTd9h9zSXwkAU"/>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-on-background/40"></div>
+<!-- Top App Bar (Custom for Detail Screen) -->
+<div class="absolute top-0 left-0 w-full pt-status-inset px-edge-padding flex justify-between items-center z-10">
+<button aria-label="Go back" class="w-11 h-11 flex items-center justify-center bg-surface/20 backdrop-blur-md rounded-full text-surface transition-transform active:scale-90">
+<span class="material-symbols-outlined text-surface" data-icon="chevron_left">chevron_left</span>
+</button>
+</div>
+<!-- Hero Content -->
+<div class="absolute bottom-0 left-0 w-full px-edge-padding pb-8pt-lg z-10">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-surfaceAlt text-primary-container px-3 py-1 rounded-full font-label text-caption uppercase tracking-wider">Test Match</span>
+</div>
+<h1 class="font-display text-display text-surface text-balance">Ashes Test Day 1</h1>
+<p class="font-body text-body text-surface/90 mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span> MCG, Melbourne
+                </p>
+</div>
+</section>
+<!-- Scrollable Content Canvas -->
+<div class="flex-1 overflow-y-auto px-edge-padding py-8pt-lg space-y-8pt-lg">
+<!-- Date & Time Chips -->
+<div class="flex gap-8pt-sm">
+<div class="flex items-center gap-2 bg-surfaceAlt px-4 py-2 rounded-full border border-border">
+<span class="material-symbols-outlined text-primary-container text-[18px]" data-icon="calendar_today">calendar_today</span>
+<span class="font-label text-label text-on-surface">Thu 26 Dec</span>
+</div>
+<div class="flex items-center gap-2 bg-surfaceAlt px-4 py-2 rounded-full border border-border">
+<span class="material-symbols-outlined text-primary-container text-[18px]" data-icon="schedule">schedule</span>
+<span class="font-label text-label text-on-surface">2:30 PM</span>
+</div>
+</div>
+<!-- Meeting Point Card -->
+<div class="bg-surface rounded-2xl p-8pt-md shadow-card border border-surface-variant flex gap-8pt-md items-start">
+<div class="w-12 h-12 rounded-full bg-surfaceAlt flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container" data-icon="meeting_room">meeting_room</span>
+</div>
+<div>
+<h2 class="font-title text-title text-on-surface">Meeting Point</h2>
+<p class="font-body text-body text-textSecondary mt-1">Hotel Lobby, 1:30 PM</p>
+<p class="font-caption text-caption text-textTertiary mt-1">Coach bay 3</p>
+</div>
+</div>
+<!-- Seat / Section Info -->
+<div class="bg-surface rounded-2xl p-8pt-md shadow-card border border-surface-variant">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-caption text-caption text-textTertiary">Section</p>
+<p class="font-title text-title text-on-surface">M12</p>
+</div>
+<div class="h-8 w-px bg-border"></div>
+<div>
+<p class="font-caption text-caption text-textTertiary">Row</p>
+<p class="font-title text-title text-on-surface">8</p>
+</div>
+<div class="h-8 w-px bg-border"></div>
+<div>
+<p class="font-caption text-caption text-textTertiary">Seat</p>
+<p class="font-title text-title text-on-surface">42-43</p>
+</div>
+</div>
+</div>
+<!-- What to bring Checklist -->
+<div class="bg-surface rounded-2xl p-8pt-md shadow-card border border-surface-variant">
+<h3 class="font-title text-title text-on-surface mb-8pt-sm">What to bring</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success" data-icon="check_circle">check_circle</span>
+<span class="font-body text-body text-on-surface">Ticket on app</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success" data-icon="check_circle">check_circle</span>
+<span class="font-body text-body text-on-surface">Hat</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success" data-icon="check_circle">check_circle</span>
+<span class="font-body text-body text-on-surface">Sunscreen</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success" data-icon="check_circle">check_circle</span>
+<span class="font-body text-body text-on-surface">Jacket</span>
+</li>
+</ul>
+</div>
+<!-- Map Preview -->
+<div class="relative w-full h-40 bg-surfaceAlt rounded-2xl overflow-hidden shadow-card border border-surface-variant group">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A detailed, modern map interface showing the Melbourne Cricket Ground area. The map uses a light mode aesthetic with soft blues and greens, clear road lines, and a distinct marker for the stadium. The lighting is clean and bright, typical of a high-end travel application map view." data-location="Melbourne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuAJ9NaoL6QKMDhgshy5JGzk82asmBR1eRNxAAfDeReb08rv1hMSqBh0SOcXe642MWuWieDMKP4RlaiNnjJWtm4yXuthDOprZKpvjZGOHUzNToeawZQobwmVXyA70lfcmDpRws1TjcdshXKymNAuZKP_FeRvaALEhhPelmotHXq4p55enqXTnuPXdfEI1bWPpnRknMYbpgk48YmqRmLo09i1I_88IlpZOBnC9ZFZVn6zW0hqRqEc04LjQkw1y3QBDUwLYOw5XmmbA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/40 to-transparent"></div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-primary-container text-surface font-label text-label px-6 py-3 rounded-full flex items-center gap-2 shadow-lg active:bg-accentPressed transition-colors">
+<span class="material-symbols-outlined text-surface" data-icon="directions">directions</span>
+                    Get directions
+                </button>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-surface border-2 border-primary-container text-primary-container font-label text-label py-4 rounded-full flex items-center justify-center gap-2 active:bg-surfaceAlt transition-colors mb-4">
+<span class="material-symbols-outlined" data-icon="calendar_add_on">calendar_add_on</span>
+                Add to calendar
+            </button>
+</div>
+</main>
+</body></html>

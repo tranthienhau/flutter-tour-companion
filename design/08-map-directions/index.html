@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ashes Tour AU - Map &amp; Directions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-low": "#e3f7fe",
+            "secondary-fixed-dim": "#ffb68a",
+            "on-background": "#0b1e23",
+            "on-primary-fixed-variant": "#004e5e",
+            "surface-container-highest": "#d2e6ed",
+            "textTertiary": "#7C9299",
+            "inverse-on-surface": "#e0f4fb",
+            "secondary": "#954a0f",
+            "on-secondary-container": "#753500",
+            "tertiary": "#4c6267",
+            "background": "#F1F8FA",
+            "on-tertiary-container": "#1d3337",
+            "on-secondary-fixed-variant": "#743500",
+            "secondary-container": "#ff9e5f",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#003540",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#5dd5f6",
+            "primary-fixed": "#b1ecff",
+            "success": "#16A34A",
+            "textSecondary": "#41595F",
+            "on-tertiary-fixed": "#071f23",
+            "accentPressed": "#0C8BA6",
+            "error-container": "#ffdad6",
+            "surface-container": "#ddf1f8",
+            "tertiary-fixed-dim": "#b3cbd0",
+            "tertiary-container": "#849ba1",
+            "on-primary-fixed": "#001f27",
+            "danger": "#DC2626",
+            "on-secondary-fixed": "#321300",
+            "primary": "#00677c",
+            "border": "#D4E4E8",
+            "surface-bright": "#f0fbff",
+            "on-surface": "#0b1e23",
+            "surface-container-high": "#d7ecf2",
+            "surfaceAlt": "#E9F3F6",
+            "outline": "#6d797d",
+            "on-tertiary-fixed-variant": "#344a4f",
+            "surface-variant": "#d2e6ed",
+            "surface-dim": "#c9dde4",
+            "warning": "#D97706",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "outline-variant": "#bcc8cd",
+            "secondary-fixed": "#ffdbc8",
+            "inverse-primary": "#5dd5f6",
+            "surface-tint": "#00677c",
+            "primary-container": "#0ea5c4",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#cfe7ed",
+            "on-surface-variant": "#3d494d",
+            "inverse-surface": "#213338",
+            "surface": "#FFFFFF",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "status-inset": "59px",
+            "home-inset": "34px",
+            "edge-padding": "20px",
+            "8pt-xs": "4px",
+            "8pt-xl": "32px",
+            "8pt-sm": "8px",
+            "8pt-md": "16px",
+            "8pt-lg": "24px"
+          },
+          "fontFamily": {
+            "title": ["Sora", "sans-serif"],
+            "label": ["Sora", "sans-serif"],
+            "body": ["Sora", "sans-serif"],
+            "caption": ["Sora", "sans-serif"],
+            "display": ["Sora", "sans-serif"]
+          },
+          "fontSize": {
+            "title": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+            "label-mobile": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "body": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "caption": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "display": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        },
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-body text-on-background w-full h-screen overflow-hidden flex flex-col relative md:max-w-[393px] md:mx-auto md:h-[852px] md:border md:border-outline-variant md:shadow-2xl md:rounded-[40px] md:mt-8 bg-surface-container-low">
+<!-- Full Bleed Map Background -->
+<div class="absolute inset-0 z-0 bg-primary-fixed" data-alt="A highly detailed top-down stylized map of Melbourne city streets and parks. The map uses a minimalist, modern light-mode aesthetic with a distinct 'Lagoon Blue' monochromatic tint. Rivers and major arteries are highlighted in vibrant cyan. Soft, glowing diffuse light creates a premium, tactical travel vibe, devoid of text labels or harsh contrast elements." data-location="Melbourne, Australia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTLInzkaoX1trpj6YxevdvY7B7Gj_Ayu-NXlHlyjeCgQq17Il9DJLU1uV0jzUOlPbbxpXQOLsfQ5nfDTSno-Ynl_L4ocVtNirGFdRPNB8r9HqDxloJzwiOAo1-jHXAGOkZHbJ8uvhmCwCHmV-V6OhF5iMgQgd0DP7s8bS68K_PiWa9TUQ59yP3HsJBdswauMy8ecJaa8xYKT8tq2tPse-2kR-Q2P36IyK5pKrDCdSPWeOGajuC5coHN3AYg_-USsfVyj9idDMYEC0')">
+<!-- Overlay Tint to enhance map styling -->
+<div class="absolute inset-0 bg-primary-fixed-dim/30 backdrop-blur-[2px]"></div>
+</div>
+<!-- Map Pins -->
+<div class="absolute z-10 top-[30%] left-[25%] flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer ring-4 ring-white/50">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+</div>
+<span class="mt-1 font-caption text-caption text-on-surface bg-surface/90 px-2 py-0.5 rounded-md shadow-sm backdrop-blur-sm">Crown</span>
+</div>
+<div class="absolute z-10 top-[45%] left-[55%] flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_rgba(14,165,196,0.3)] hover:scale-110 transition-transform cursor-pointer ring-4 ring-white">
+<span class="material-symbols-outlined text-[24px]">stadium</span>
+</div>
+<span class="mt-1 font-caption text-caption text-on-surface bg-surface px-2 py-0.5 rounded-md shadow-sm font-bold">MCG</span>
+</div>
+<div class="absolute z-10 top-[25%] left-[65%] flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer ring-4 ring-white/50">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<span class="mt-1 font-caption text-caption text-on-surface bg-surface/90 px-2 py-0.5 rounded-md shadow-sm backdrop-blur-sm">Garden State</span>
+</div>
+<div class="absolute z-10 top-[55%] left-[30%] flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer ring-4 ring-white/50">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<span class="mt-1 font-caption text-caption text-on-surface bg-surface/90 px-2 py-0.5 rounded-md shadow-sm backdrop-blur-sm">Lobby</span>
+</div>
+<!-- Floating Segmented Control (Top Overlay) -->
+<div class="relative z-20 w-full pt-status-inset px-edge-padding flex justify-center">
+<div class="bg-surfaceAlt p-1 rounded-full flex shadow-[0_4px_12px_rgba(11,30,35,0.06)] backdrop-blur-md">
+<button class="px-6 py-2 rounded-full bg-surface text-on-surface font-label text-label shadow-[0_2px_8px_rgba(11,30,35,0.08)] transition-all">Today</button>
+<button class="px-6 py-2 rounded-full text-textSecondary font-label text-label hover:text-on-surface transition-all">All locations</button>
+</div>
+</div>
+<!-- Bottom Sheet Card -->
+<div class="relative z-20 mt-auto px-4 pb-[100px]">
+<div class="bg-surface rounded-[20px] p-edge-padding shadow-[0_8px_24px_rgba(11,30,35,0.08),0_1px_2px_rgba(11,30,35,0.04)]">
+<!-- Handle -->
+<div class="w-12 h-1.5 bg-outline-variant rounded-full mx-auto mb-6"></div>
+<!-- Header & Metadata -->
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-title text-title text-on-surface mb-1">MCG Gate 3</h2>
+<div class="flex items-center space-x-3 text-textSecondary font-caption text-caption">
+<span class="flex items-center"><span class="material-symbols-outlined text-[16px] mr-1">directions_walk</span> 6 min walk</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>1.2 km</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-primary-container hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+<!-- Primary Action -->
+<button class="w-full bg-primary-container hover:bg-accentPressed text-on-primary font-label text-label py-4 rounded-full flex items-center justify-center shadow-md transition-colors mb-6 active:scale-[0.98]">
+<span class="material-symbols-outlined mr-2">navigation</span>
+        Directions
+      </button>
+<!-- Nearby Points -->
+<div>
+<h3 class="font-label text-label text-textSecondary mb-4">Nearby points</h3>
+<div class="space-y-3">
+<div class="flex items-center space-x-4 p-3 rounded-[12px] hover:bg-surfaceAlt transition-colors cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">train</span>
+</div>
+<div class="flex-1">
+<p class="font-label text-label text-on-surface">Jolimont Station</p>
+<p class="font-caption text-caption text-textSecondary">Transport Hub</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<div class="flex items-center space-x-4 p-3 rounded-[12px] hover:bg-surfaceAlt transition-colors cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">museum</span>
+</div>
+<div class="flex-1">
+<p class="font-label text-label text-on-surface">National Sports Museum</p>
+<p class="font-caption text-caption text-textSecondary">Attraction</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Shared Component: BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-none border-t border-outline-variant bg-surface flex justify-around items-center h-[84px] pb-home-inset px-8pt-sm shadow-[0_-4px_24px_rgba(11,30,35,0.02)] md:absolute">
+<button class="flex flex-col items-center justify-center text-tertiary hover:bg-surface-variant/50 active:scale-95 transition-transform duration-150 p-2 rounded-xl">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label text-label-mobile">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-tertiary hover:bg-surface-variant/50 active:scale-95 transition-transform duration-150 p-2 rounded-xl">
+<span class="material-symbols-outlined mb-1">calendar_today</span>
+<span class="font-label text-label-mobile">Itinerary</span>
+</button>
+<button class="flex flex-col items-center justify-center text-primary font-bold active:scale-95 transition-transform duration-150 p-2 rounded-xl">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="font-label text-label-mobile">Map</span>
+</button>
+<button class="flex flex-col items-center justify-center text-tertiary hover:bg-surface-variant/50 active:scale-95 transition-transform duration-150 p-2 rounded-xl">
+<span class="material-symbols-outlined mb-1">notifications</span>
+<span class="font-label text-label-mobile">Updates</span>
+</button>
+<button class="flex flex-col items-center justify-center text-tertiary hover:bg-surface-variant/50 active:scale-95 transition-transform duration-150 p-2 rounded-xl">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label text-label-mobile">Profile</span>
+</button>
+</nav>
+</body></html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enter Tour Code - Ashes Tour AU</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#003540",
+                        "surfaceAlt": "#E9F3F6",
+                        "secondary-fixed": "#ffdbc8",
+                        "secondary-container": "#ff9e5f",
+                        "on-surface-variant": "#3d494d",
+                        "primary": "#00677c",
+                        "primary-container": "#0ea5c4",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "surface": "#FFFFFF",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#071f23",
+                        "primary-fixed-dim": "#5dd5f6",
+                        "tertiary": "#4c6267",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#d2e6ed",
+                        "success": "#16A34A",
+                        "secondary-fixed-dim": "#ffb68a",
+                        "tertiary-fixed-dim": "#b3cbd0",
+                        "surface-container-high": "#d7ecf2",
+                        "inverse-primary": "#5dd5f6",
+                        "surface-variant": "#d2e6ed",
+                        "surface-container": "#ddf1f8",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#743500",
+                        "accentPressed": "#0C8BA6",
+                        "on-background": "#0b1e23",
+                        "inverse-surface": "#213338",
+                        "warning": "#D97706",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#001f27",
+                        "danger": "#DC2626",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#bcc8cd",
+                        "primary-fixed": "#b1ecff",
+                        "secondary": "#954a0f",
+                        "tertiary-fixed": "#cfe7ed",
+                        "tertiary-container": "#849ba1",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f0fbff",
+                        "inverse-on-surface": "#e0f4fb",
+                        "textSecondary": "#41595F",
+                        "on-tertiary-fixed-variant": "#344a4f",
+                        "surface-dim": "#c9dde4",
+                        "background": "#F1F8FA",
+                        "textTertiary": "#7C9299",
+                        "surface-tint": "#00677c",
+                        "outline": "#6d797d",
+                        "border": "#D4E4E8",
+                        "on-secondary-container": "#753500",
+                        "on-secondary-fixed": "#321300",
+                        "surface-container-low": "#e3f7fe",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#1d3337",
+                        "on-surface": "#0b1e23",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "20": "20px",
+                        "12": "12px",
+                        "14": "14px"
+                    },
+                    "spacing": {
+                        "status-inset": "59px",
+                        "8pt-xs": "4px",
+                        "8pt-xl": "32px",
+                        "8pt-md": "16px",
+                        "8pt-sm": "8px",
+                        "8pt-lg": "24px",
+                        "home-inset": "34px",
+                        "edge-padding": "20px"
+                    },
+                    "fontFamily": {
+                        "title": ["Sora"],
+                        "body": ["Sora"],
+                        "display": ["Sora"],
+                        "label": ["Sora"],
+                        "caption": ["Sora"]
+                    },
+                    "fontSize": {
+                        "title": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "caption": ["13px", { "lineHeight": "18px", "fontWeight": "500" }]
+                    },
+                    "boxShadow": {
+                        'soft': '0 1px 2px 0 rgba(0,0,0,0.04), 0 8px 24px 0 rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0EA5C4 0%, #FF9E5F 100%);
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen flex flex-col font-body text-on-background selection:bg-primary-container selection:text-white">
+<!-- Hero Panel -->
+<div class="hero-gradient h-[35vh] w-full flex items-center justify-center pt-status-inset rounded-b-[32px] shadow-soft relative overflow-hidden">
+<!-- Subtle overlay pattern -->
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-50"></div>
+<div class="relative z-10 w-24 h-24 bg-surface rounded-full shadow-soft flex items-center justify-center p-2">
+<img alt="Ashes Tour AU Crest" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRJFPw38Uu6VhPq-QKyOAVQ0nU4hqVKVG66YJ-HuOFnBkSH0xEqhXJmBa-2q25cQ5ItWkyrwC21BBvBqMgP0u9KPsY7UZX0_1MkKgpUSja5-wvSd-OvwG4i-rwBGOIym64Kc33rlV765Xdw9-1HB7wF9FUtjdDKO0D_HzhrMZfrucCGXpTaJ-6_GwWDVTxtV219n8B7GBPSiIPxpXq8h_-37638NosfIoPCexGTT9kmDJ8xmZCEpCjmGHLHu9OR3RXlBFrKVwowxU"/>
+</div>
+</div>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-edge-padding -mt-8pt-xl relative z-20 pb-home-inset">
+<!-- Interactive Card container -->
+<div class="bg-surface rounded-20 shadow-soft p-edge-padding flex flex-col items-center text-center">
+<h1 class="font-display text-display text-on-surface mb-8pt-sm mt-8pt-sm">Enter your tour code</h1>
+<p class="font-body text-body text-textSecondary mb-8pt-xl">Unlock your group's itinerary</p>
+<!-- Code Input Form -->
+<form class="w-full max-w-sm flex flex-col items-center">
+<div class="w-full mb-8pt-md">
+<label class="sr-only" for="tour-code">Tour Code</label>
+<div class="relative w-full">
+<input autocomplete="off" class="w-full h-14 bg-surfaceAlt border border-border rounded-12 text-center font-title text-title tracking-[0.2em] text-on-surface uppercase focus:ring-2 focus:ring-primary-container focus:border-primary-container transition-all outline-none" id="tour-code" maxlength="7" placeholder="ASH-42K" spellcheck="false" type="text"/>
+</div>
+</div>
+<p class="font-caption text-caption text-textTertiary mb-8pt-xl flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                    Find your code in your welcome email
+                </p>
+<button class="w-full h-[56px] bg-primary-container hover:bg-accentPressed text-white font-label text-label rounded-full transition-colors flex items-center justify-center shadow-sm" type="button">
+                    Continue
+                </button>
+</form>
+</div>
+<!-- Bottom Link -->
+<div class="mt-auto pt-8pt-lg pb-8pt-lg flex justify-center w-full">
+<a class="font-label text-label text-primary-container hover:text-accentPressed transition-colors underline decoration-primary-container/30 underline-offset-4" href="#">
+                Need help?
+            </a>
+</div>
+</main>
+<script>
+        // Simple input formatting script to auto-insert hyphen if needed
+        document.getElementById('tour-code').addEventListener('input', function(e) {
+            let val = e.target.value.replace(/-/g, '').toUpperCase();
+            if (val.length > 3) {
+                val = val.substring(0, 3) + '-' + val.substring(3);
+            }
+            e.target.value = val;
+        });
+    </script>
+</body></html>

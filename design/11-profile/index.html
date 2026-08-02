@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Morgan - Profile &amp; Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#c9dde4",
+                      "surface-container-low": "#e3f7fe",
+                      "on-secondary-fixed": "#321300",
+                      "border": "#D4E4E8",
+                      "secondary": "#954a0f",
+                      "tertiary-container": "#849ba1",
+                      "on-tertiary-fixed-variant": "#344a4f",
+                      "surface": "#FFFFFF",
+                      "error-container": "#ffdad6",
+                      "on-primary": "#ffffff",
+                      "success": "#16A34A",
+                      "primary-fixed-dim": "#5dd5f6",
+                      "on-error": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "background": "#F1F8FA",
+                      "accentPressed": "#0C8BA6",
+                      "on-surface-variant": "#3d494d",
+                      "error": "#ba1a1a",
+                      "outline-variant": "#bcc8cd",
+                      "warning": "#D97706",
+                      "on-secondary": "#ffffff",
+                      "on-surface": "#0b1e23",
+                      "tertiary": "#4c6267",
+                      "surface-tint": "#00677c",
+                      "on-secondary-container": "#753500",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#ff9e5f",
+                      "textTertiary": "#7C9299",
+                      "surface-container": "#ddf1f8",
+                      "on-background": "#0b1e23",
+                      "inverse-surface": "#213338",
+                      "danger": "#DC2626",
+                      "secondary-fixed": "#ffdbc8",
+                      "textSecondary": "#41595F",
+                      "surface-container-high": "#d7ecf2",
+                      "tertiary-fixed": "#cfe7ed",
+                      "primary-fixed": "#b1ecff",
+                      "inverse-primary": "#5dd5f6",
+                      "primary-container": "#0ea5c4",
+                      "on-tertiary": "#ffffff",
+                      "surface-variant": "#d2e6ed",
+                      "on-tertiary-fixed": "#071f23",
+                      "on-secondary-fixed-variant": "#743500",
+                      "primary": "#00677c",
+                      "tertiary-fixed-dim": "#b3cbd0",
+                      "on-tertiary-container": "#1d3337",
+                      "secondary-fixed-dim": "#ffb68a",
+                      "on-primary-fixed": "#001f27",
+                      "surface-container-highest": "#d2e6ed",
+                      "on-primary-fixed-variant": "#004e5e",
+                      "on-primary-container": "#003540",
+                      "surfaceAlt": "#E9F3F6",
+                      "surface-bright": "#f0fbff",
+                      "outline": "#6d797d",
+                      "inverse-on-surface": "#e0f4fb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "8pt-lg": "24px",
+                      "status-inset": "59px",
+                      "home-inset": "34px",
+                      "edge-padding": "20px",
+                      "8pt-sm": "8px",
+                      "8pt-md": "16px",
+                      "8pt-xl": "32px",
+                      "8pt-xs": "4px"
+              },
+              "fontFamily": {
+                      "title": [
+                              "Sora"
+                      ],
+                      "display": [
+                              "Sora"
+                      ],
+                      "body": [
+                              "Sora"
+                      ],
+                      "caption": [
+                              "Sora"
+                      ],
+                      "label": [
+                              "Sora"
+                      ]
+              },
+              "fontSize": {
+                      "title": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .glass-card {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Toggle Switch Styles */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #0EA5C4;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #0EA5C4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen text-on-surface font-body antialiased pb-home-inset relative">
+<!-- Top App Bar (Hidden on Mobile, flex on md+) -->
+<header class="hidden md:flex justify-between items-center w-full px-edge-padding pt-status-inset pb-8pt-md bg-background dark:bg-on-background sticky top-0 z-40">
+<div class="flex items-center gap-4">
+<button class="scale-95 active:opacity-80 transition-all text-primary dark:text-primary-fixed-dim hover:bg-surface-variant/50 rounded-full p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<h1 class="font-title text-title font-bold text-primary dark:text-primary-fixed-dim">Ashes Tour AU</h1>
+</div>
+<div>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label text-label">Group A</span>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="w-full max-w-md mx-auto pt-status-inset px-edge-padding pb-32">
+<!-- Profile Header Section -->
+<section class="flex flex-col items-center pt-8pt-xl pb-8pt-lg text-center">
+<div class="relative mb-4">
+<img class="w-24 h-24 rounded-full object-cover border-4 border-surface shadow-sm" data-alt="A highly detailed professional headshot of a confident young executive, Alex Morgan, in a modern bright office setting. Soft, natural daylight illuminates their face, creating a clean, approachable, and corporate look consistent with a high-end sports tour aesthetic. The background is slightly blurred with soft lagoon blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTz_C6jhAsD_8Q1ygCl6fALYVH1ff_6vUvaFuLLCIar0-u59rUqR3Gd1QYGJHv0TgqO9BGhY1js78m-s4aGtfki4iMq6lIW0Sriw9UFa98vsWtM9fT4yTJsZG1oQmZ_Y5jRjwdAHs1c7UhNpBButrW2NtOO36rfFHdvaQeLo2fM15iqR1PpVTsgcVnwad_H5GMb3Z-SW-xxiHK2LgEDF8438DWI08ROlJk2x3jV9RS92UmYi8AnpDkXZ-l-rC4NNZ3Um9Pxn-wfLA"/>
+</div>
+<h2 class="font-display text-display text-on-surface mb-2">Alex Morgan</h2>
+<div class="flex items-center justify-center gap-2">
+<span class="px-3 py-1 bg-primary-container text-surface rounded-full font-label text-label">Group C</span>
+<span class="px-3 py-1 bg-surfaceAlt text-textSecondary rounded-full font-label text-label font-mono tracking-wider">ASH-42K</span>
+</div>
+</section>
+<!-- Details Section -->
+<section class="mb-8pt-lg">
+<h3 class="font-title text-title text-on-surface mb-4 px-2">My details</h3>
+<div class="bg-surface rounded-[20px] glass-card overflow-hidden">
+<div class="flex items-center justify-between p-4 border-b border-border/50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<p class="font-body text-body text-on-surface">Dietary requirements</p>
+</div>
+</div>
+<span class="font-body text-body text-textSecondary">Vegetarian</span>
+</div>
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<div>
+<p class="font-body text-body text-on-surface">Emergency contact</p>
+</div>
+</div>
+<span class="font-body text-body text-textSecondary text-right">Jordan Morgan</span>
+</div>
+</div>
+</section>
+<!-- Settings Section -->
+<section class="mb-8pt-lg">
+<h3 class="font-title text-title text-on-surface mb-4 px-2">Settings</h3>
+<div class="bg-surface rounded-[20px] glass-card overflow-hidden">
+<!-- Toggle Row 1 -->
+<div class="flex items-center justify-between p-4 border-b border-border/50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">cloud_off</span>
+</div>
+<p class="font-body text-body text-on-surface">Offline itinerary</p>
+</div>
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-surface border-4 appearance-none cursor-pointer border-primary-container right-0 z-10 transition-all duration-300" id="toggle1" name="toggle1" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-primary-container cursor-pointer transition-colors duration-300" for="toggle1"></label>
+</div>
+</div>
+<!-- Toggle Row 2 -->
+<div class="flex items-center justify-between p-4 border-b border-border/50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<p class="font-body text-body text-on-surface">Push notifications</p>
+</div>
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-surface border-4 appearance-none cursor-pointer border-primary-container right-0 z-10 transition-all duration-300" id="toggle2" name="toggle2" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-primary-container cursor-pointer transition-colors duration-300" for="toggle2"></label>
+</div>
+</div>
+<!-- Language Row -->
+<div class="flex items-center justify-between p-4 cursor-pointer hover:bg-surfaceAlt/50 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">language</span>
+</div>
+<p class="font-body text-body text-on-surface">Language</p>
+</div>
+<div class="flex items-center gap-2 text-textSecondary">
+<span class="font-body text-body">English</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Support Section -->
+<section class="mb-8pt-lg">
+<h3 class="font-title text-title text-on-surface mb-4 px-2">Support</h3>
+<div class="bg-surface rounded-[20px] glass-card overflow-hidden">
+<div class="flex items-center justify-between p-4 border-b border-border/50 cursor-pointer hover:bg-surfaceAlt/50 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<p class="font-body text-body text-on-surface">Contact tour staff</p>
+</div>
+<span class="material-symbols-outlined text-textSecondary text-sm">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 cursor-pointer hover:bg-surfaceAlt/50 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surfaceAlt flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined">help</span>
+</div>
+<p class="font-body text-body text-on-surface">Help</p>
+</div>
+<span class="material-symbols-outlined text-textSecondary text-sm">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Sign Out -->
+<section class="mb-12">
+<div class="bg-surface rounded-[20px] glass-card overflow-hidden cursor-pointer hover:bg-error-container/20 transition-colors">
+<div class="flex items-center justify-center p-4">
+<p class="font-label text-label font-bold text-danger">Sign out</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-surface dark:bg-surface-container-highest px-8pt-sm pb-home-inset h-20 border-t border-border dark:border-outline-variant flat no shadows rounded-t-none">
+<!-- Home (Inactive) -->
+<a class="flex flex-col items-center justify-center text-textTertiary dark:text-outline-variant hover:text-primary-container transition-colors active:scale-90 transition-transform duration-200 group w-16 h-16" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-container" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label text-label text-[10px]">Home</span>
+</a>
+<!-- Itinerary (Inactive) -->
+<a class="flex flex-col items-center justify-center text-textTertiary dark:text-outline-variant hover:text-primary-container transition-colors active:scale-90 transition-transform duration-200 group w-16 h-16" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-container" style="font-variation-settings: 'FILL' 0;">event_note</span>
+<span class="font-label text-label text-[10px]">Itinerary</span>
+</a>
+<!-- Map (Inactive) -->
+<a class="flex flex-col items-center justify-center text-textTertiary dark:text-outline-variant hover:text-primary-container transition-colors active:scale-90 transition-transform duration-200 group w-16 h-16" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-container" style="font-variation-settings: 'FILL' 0;">map</span>
+<span class="font-label text-label text-[10px]">Map</span>
+</a>
+<!-- Updates (Inactive) -->
+<a class="flex flex-col items-center justify-center text-textTertiary dark:text-outline-variant hover:text-primary-container transition-colors active:scale-90 transition-transform duration-200 group w-16 h-16" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-container" style="font-variation-settings: 'FILL' 0;">notifications</span>
+<span class="font-label text-label text-[10px]">Updates</span>
+</a>
+<!-- Profile (Active) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold active:scale-90 transition-transform duration-200 group w-16 h-16" href="#">
+<span class="material-symbols-outlined mb-1 text-primary-container" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label text-label text-[10px] text-primary-container font-bold">Profile</span>
+</a>
+</nav>
+<script>
+        // Simple logic to handle toggle visual states if needed beyond CSS
+        document.querySelectorAll('.toggle-checkbox').forEach(toggle => {
+            toggle.addEventListener('change', function() {
+                // Additional JS logic can go here if needed for toggle interactions
+            });
+        });
+    </script>
+</body></html>

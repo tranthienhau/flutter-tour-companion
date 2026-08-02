@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome - Ashes Tour AU</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Sora Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#e0f4fb",
+              "on-primary-container": "#003540",
+              "on-secondary-fixed-variant": "#743500",
+              "on-primary-fixed-variant": "#004e5e",
+              "on-secondary-fixed": "#321300",
+              "secondary-container": "#ff9e5f",
+              "danger": "#DC2626",
+              "on-tertiary-container": "#1d3337",
+              "primary-fixed-dim": "#5dd5f6",
+              "primary-container": "#0ea5c4",
+              "background": "#F1F8FA",
+              "surface-variant": "#d2e6ed",
+              "surface-dim": "#c9dde4",
+              "textSecondary": "#41595F",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#5dd5f6",
+              "surface-container-highest": "#d2e6ed",
+              "surface": "#FFFFFF",
+              "textTertiary": "#7C9299",
+              "on-secondary-container": "#753500",
+              "surface-container-low": "#e3f7fe",
+              "error": "#ba1a1a",
+              "on-background": "#0b1e23",
+              "on-primary-fixed": "#001f27",
+              "success": "#16A34A",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f0fbff",
+              "tertiary": "#4c6267",
+              "surface-container-high": "#d7ecf2",
+              "secondary": "#954a0f",
+              "on-tertiary-fixed-variant": "#344a4f",
+              "secondary-fixed": "#ffdbc8",
+              "border": "#D4E4E8",
+              "outline": "#6d797d",
+              "primary": "#00677c",
+              "on-tertiary-fixed": "#071f23",
+              "tertiary-container": "#849ba1",
+              "surface-tint": "#00677c",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#3d494d",
+              "on-error": "#ffffff",
+              "surfaceAlt": "#E9F3F6",
+              "on-secondary": "#ffffff",
+              "surface-container": "#ddf1f8",
+              "tertiary-fixed-dim": "#b3cbd0",
+              "tertiary-fixed": "#cfe7ed",
+              "inverse-surface": "#213338",
+              "outline-variant": "#bcc8cd",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#b1ecff",
+              "on-surface": "#0b1e23",
+              "secondary-fixed-dim": "#ffb68a",
+              "accentPressed": "#0C8BA6",
+              "on-primary": "#ffffff",
+              "warning": "#D97706"
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            spacing: {
+              "status-inset": "59px",
+              "home-inset": "34px",
+              "8pt-xs": "4px",
+              "8pt-xl": "32px",
+              "edge-padding": "20px",
+              "8pt-sm": "8px",
+              "8pt-md": "16px",
+              "8pt-lg": "24px"
+            },
+            fontFamily: {
+              "caption": ["Sora"],
+              "body": ["Sora"],
+              "label": ["Sora"],
+              "display": ["Sora"],
+              "title": ["Sora"]
+            },
+            fontSize: {
+              "caption": ["13px", { lineHeight: "18px", fontWeight: "500" }],
+              "body": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "label": ["14px", { lineHeight: "20px", fontWeight: "500" }],
+              "display": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }],
+              "title": ["20px", { lineHeight: "28px", fontWeight: "600" }]
+            },
+            boxShadow: {
+              'soft': '0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06)'
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0EA5C4 0%, #FF9E5E 100%);
+        }
+        
+        /* Toggle Switch Styles */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #0ea5c4;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #0ea5c4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen w-full font-body text-on-surface antialiased flex flex-col items-center">
+<!-- Mobile Container Constraints (393x852) -->
+<main class="w-full max-w-[393px] h-[852px] bg-background relative flex flex-col overflow-hidden shadow-2xl mx-auto">
+<!-- Header Gradient Area -->
+<div class="relative w-full h-[45%] gradient-bg rounded-b-[40px] flex flex-col items-center justify-end pb-8">
+<!-- Check Success Illustration -->
+<div class="w-24 h-24 bg-surface rounded-full flex items-center justify-center shadow-soft mb-6 relative z-10">
+<span class="material-symbols-outlined text-primary-container" style="font-size: 48px; font-variation-settings: 'FILL' 1;">
+                    check_circle
+                </span>
+</div>
+<!-- Headings -->
+<div class="text-center px-edge-padding text-surface">
+<h1 class="font-display text-display mb-2">Welcome, Group C</h1>
+<p class="font-body text-body opacity-90">Ashes Tour Australia 2026</p>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex-1 px-edge-padding pt-8pt-xl pb-home-inset flex flex-col z-20">
+<!-- Stats Card -->
+<div class="bg-surface rounded-[20px] p-6 shadow-soft flex flex-row justify-between items-center mb-8pt-xl">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary-container">location_city</span>
+<span class="font-title text-title text-on-surface">6</span>
+<span class="font-caption text-caption text-textTertiary">Cities</span>
+</div>
+<div class="w-px h-12 bg-border"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary-container">calendar_month</span>
+<span class="font-title text-title text-on-surface">12</span>
+<span class="font-caption text-caption text-textTertiary">Days</span>
+</div>
+<div class="w-px h-12 bg-border"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary-container">group</span>
+<span class="font-title text-title text-on-surface">24</span>
+<span class="font-caption text-caption text-textTertiary">Delegates</span>
+</div>
+</div>
+<!-- Offline Toggle Row -->
+<div class="bg-surface rounded-[20px] p-4 shadow-soft flex flex-row justify-between items-center mb-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container">cloud_download</span>
+</div>
+<div>
+<p class="font-label text-label text-on-surface">Download itinerary</p>
+<p class="font-caption text-caption text-textTertiary">For offline use</p>
+</div>
+</div>
+<!-- Toggle Switch -->
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-surface border-4 appearance-none cursor-pointer border-primary-container z-10 top-0 transition-all right-0" id="toggle" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-primary-container cursor-pointer transition-all" for="toggle"></label>
+</div>
+</div>
+<!-- Primary Button -->
+<button class="w-full h-[56px] bg-primary-container text-on-primary rounded-full font-label text-label flex items-center justify-center gap-2 mt-8pt-xl active:bg-accentPressed transition-colors shadow-soft">
+                Enter app
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</main>
+</body></html>

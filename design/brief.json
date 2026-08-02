@@ -1,0 +1,139 @@
+{
+  "title": "Tour Companion",
+  "slug": "tour-companion",
+  "domain": "travel",
+  "style": "bright",
+  "features": [
+    "Tour-code access per group",
+    "What's next home screen",
+    "Day-by-day itineraries",
+    "Hotels, transfers and meeting points",
+    "Match and activity information",
+    "Maps and directions",
+    "Push notification updates",
+    "Offline itinerary access",
+    "Optional delegate profiles"
+  ],
+  "screenCount": 10,
+  "sharedComponents": {
+    "bottomTabBar": {
+      "tabs": ["Home", "Itinerary", "Map", "Updates", "Profile"],
+      "note": "Exactly 5 tabs in this order, rounded outline icons: Home=house, Itinerary=calendar-days, Map=map-pin, Updates=bell, Profile=user. Active tab in accent lagoon blue #0EA5C4, inactive tinted grey. Flat bar, no gradient. Reused verbatim on every nav screen."
+    },
+    "statusBar": "Top app bar: tour name + group chip (e.g. 'Group C - Ashes Tour AU'). A slim offline-ready pill appears when the itinerary is cached.",
+    "controls": "Primary button: pill, accent #0EA5C4 fill, white label, pressed = accentPressed. Secondary: outline accent. Text input: 12px radius, focus = accent ring, error = danger ring. Card: 20px radius, soft shadow. Chip: pill, accentTint fill for selected."
+  },
+  "screens": [
+    {
+      "name": "tour-code-entry",
+      "purpose": "User enters their unique tour code to unlock their group's content",
+      "content": "Branded hero with soft accent->support gradient, tour crest, large title 'Enter your tour code', 6-cell code input (e.g. ASH-42K), helper text 'Find your code in your welcome email', primary Continue button, small 'Need help?' link",
+      "group": "onboarding",
+      "nav": "none",
+      "states": ["default"]
+    },
+    {
+      "name": "welcome-group",
+      "purpose": "Confirm the matched tour group and set expectations after a valid code",
+      "content": "Big focal check illustration, 'Welcome, Group C', subtitle 'Ashes Tour - Australia 2026', group summary card (6 cities, 12 days, 24 delegates), toggle 'Download itinerary for offline use', primary 'Enter app' button",
+      "group": "onboarding",
+      "nav": "none",
+      "states": ["default"]
+    },
+    {
+      "name": "home",
+      "purpose": "Answer 'What's next?' at a glance with the upcoming event and today's timeline",
+      "content": "Top bar with group chip + offline-ready pill. Focal 'What's next' hero card with gradient: 'Coach transfer to MCG' 2:30 PM, meeting point Lobby, countdown. Below: Today timeline (breakfast, transfer, match, dinner) as vertical stepper with times, quick actions row (Map, Hotel, Updates)",
+      "group": "core",
+      "nav": "Home",
+      "states": ["default"]
+    },
+    {
+      "name": "itinerary",
+      "purpose": "Browse the full day-by-day itinerary for the group",
+      "content": "Header 'Your itinerary', horizontal day selector chips Day 1..12 with dates, scrollable list of day cards each showing city (Melbourne, Sydney, Adelaide), headline activity, hotel name, and a status dot (done / today / upcoming). Offline-ready pill in header",
+      "group": "core",
+      "nav": "Itinerary",
+      "states": ["default"]
+    },
+    {
+      "name": "day-detail",
+      "purpose": "See a single day's full schedule of activities with times and locations",
+      "content": "Sticky header 'Day 4 - Melbourne, Thu 26 Feb'. Vertical timeline of items: 8:00 Breakfast at Crown, 10:00 City walking tour, 1:30 Coach to MCG, 2:30 Ashes Test Day 1, 8:00 Group dinner. Each item = time, title, venue, small icon, tap chevron. Meeting-point callout banner",
+      "group": "detail",
+      "nav": "none",
+      "states": ["default"]
+    },
+    {
+      "name": "activity-detail",
+      "purpose": "Deep detail for one match / activity including logistics",
+      "content": "Hero image of MCG with duotone accent overlay, title 'Ashes Test - Day 1', date/time chips, meeting point card (Hotel Lobby, 1:30 PM, coach bay 3), seat/section info, 'What to bring' list, map preview thumbnail with 'Get directions' button, add-to-calendar",
+      "group": "detail",
+      "nav": "none",
+      "states": ["default"]
+    },
+    {
+      "name": "hotels-transfers",
+      "purpose": "Reference hotels, transfers and meeting points for the trip",
+      "content": "Segmented control Hotels / Transfers / Meeting points. Hotels tab: cards with hotel photo, name (Crown Melbourne), check-in/out dates, address, call button. Transfers: list of coach transfers with pickup time + location. Each row has a map-pin action",
+      "group": "detail",
+      "nav": "Itinerary",
+      "states": ["default"]
+    },
+    {
+      "name": "map-directions",
+      "purpose": "See all tour locations on a map and get directions",
+      "content": "Full-bleed map with accent pins for hotel, venue, meeting point, restaurant. Bottom sheet: selected pin 'MCG - Gate 3', distance 1.2 km, ETA, 'Directions' primary button, list of nearby tour points. Segmented Today / All locations",
+      "group": "core",
+      "nav": "Map",
+      "states": ["default"]
+    },
+    {
+      "name": "updates",
+      "purpose": "Read push-notification updates and announcements from tour staff",
+      "content": "Header 'Updates' with unread badge. List of announcement cards: pinned 'Transfer moved to 2:45 PM' (highlighted accentTint), 'Dinner dress code smart casual', 'Weather alert - bring a jacket'. Each = title, body preview, time, staff avatar. Empty-state variant shows a calm 'You're all caught up' illustration",
+      "group": "core",
+      "nav": "Updates",
+      "states": ["default", "empty"]
+    },
+    {
+      "name": "profile",
+      "purpose": "Manage the optional delegate profile and offline / notification settings",
+      "content": "Avatar + name (Alex Morgan), group chip, tour code ASH-42K. Sections: My details (dietary, emergency contact), Settings rows (Offline itinerary toggle ON, Push notifications ON, Language), Support, Sign out. Clean grouped list on tinted surfaceAlt",
+      "group": "settings",
+      "nav": "Profile",
+      "states": ["default"]
+    }
+  ],
+  "designSystem": {
+    "theme": "light",
+    "frame": "393x852 mobile (iPhone 16/17). Top inset ~59px, bottom home-indicator inset ~34px kept clear.",
+    "color": {
+      "background": "#F1F8FA",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#E9F3F6",
+      "accent": "#0EA5C4",
+      "accentTint": "#D6EEF4",
+      "accentPressed": "#0C8BA6",
+      "support": "#FF9E5E",
+      "text": { "primary": "#0E2126", "secondary": "#41595F", "tertiary": "#7C9299" },
+      "border": "#D4E4E8",
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "danger": "#DC2626"
+    },
+    "type": {
+      "fontFamily": "Sora",
+      "display": "32 / 700 / -0.02em - hero titles, countdowns",
+      "title": "20 / 600 - section headers, card titles",
+      "body": "16 / 400 - default text",
+      "label": "14 / 500 - buttons, tabs, chips",
+      "caption": "13 / 500 - times, metadata"
+    },
+    "radius": { "card": 20, "control": 14, "input": 12, "pill": 999 },
+    "spacing": "8pt scale (4,8,12,16,24,32); screen edge padding 20px; generous vertical rhythm",
+    "elevation": "soft only: card = 0 1px 2px rgba(0,0,0,.04) + 0 8px 24px rgba(0,0,0,.06)",
+    "icons": "ONE set: rounded outline (Lucide), 24px, ~1.75 stroke",
+    "a11y": "accent darkened for text where needed to pass 4.5:1 on white; tap targets >=44x44pt"
+  }
+}
